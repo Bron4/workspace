@@ -1,0 +1,6 @@
+{
+  "gptPilot.isRemoteWs": true,
+  "gptPilot.useRemoteWs": false,
+  "workbench.colorTheme": "Default Dark+",
+  "remote.autoForwardPorts": false
+}
