@@ -8,6 +8,7 @@ const bitlyService = require('../services/bitlyService');
 const { requireUser } = require('./middleware/auth');
 
 const router = express.Router();
+console.log("✅ smsRoutes.js loaded");
 
 // POST /api/sms/send - Send SMS review request
 router.post('/send', requireUser, async (req, res) => {
