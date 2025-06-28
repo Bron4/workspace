@@ -13,6 +13,9 @@ console.log("✅ smsRoutes.js loaded");
 // POST /api/sms/send - Send SMS review request
 router.post('/send', requireUser, async (req, res) => {
   try {
+    res.json({ status: 'hit', note: '✅ /api/sms/send route triggered' });
+return;
+    
     const { cityId, technicianId, customerName, customerPhone } = req.body;
     console.log('SMS Send: Received request:', { cityId, technicianId, customerName, customerPhone: `***-***-${customerPhone?.slice(-4)}` });
 
