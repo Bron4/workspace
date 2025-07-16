@@ -1,3 +1,4 @@
+// FORCE REDEPLOY - FIXING SMS BUG - REMOVE /API FROM URL
 const axios = require('axios');
 
 class SimpleTextingService {
