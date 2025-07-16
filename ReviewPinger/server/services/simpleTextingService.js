@@ -76,7 +76,7 @@ class SimpleTextingService {
         'Content-Type': 'application/json'
       };
 
-      const fullUrl = `${this.baseUrl}/api/messages`;
+      const fullUrl = `${this.baseUrl}/messages`;
 
       console.log('SimpleTexting: Full request URL:', fullUrl);
       console.log('SimpleTexting: Request headers:', {
@@ -152,7 +152,7 @@ class SimpleTextingService {
         throw new Error('SimpleTexting API key not configured');
       }
 
-      const response = await axios.get(`${this.baseUrl}/api/messages/${messageId}`, {
+      const response = await axios.get(`${this.baseUrl}/messages/${messageId}`, {
         headers: {
           'X-API-Key': this.apiKey,
           'Content-Type': 'application/json'
