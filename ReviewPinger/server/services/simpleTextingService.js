@@ -77,8 +77,7 @@ class SimpleTextingService {
         'Content-Type': 'application/json'
       };
 
-      const fullUrl = `${this.baseUrl}/messages`;
-
+      const fullUrl = `${this.baseUrl}/messages`; // FIXED: removed /api from path
       console.log('SimpleTexting: Full request URL:', fullUrl);
       console.log('SimpleTexting: Request headers:', {
         'X-API-Key': `${this.apiKey.substring(0, 8)}...`,
